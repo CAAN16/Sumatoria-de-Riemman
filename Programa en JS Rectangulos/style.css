@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 13px 18px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #2f80ed;
+}
+
+.grupo-entrada {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.grupo-entrada label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 16px;
+}
+
+.grupo-entrada input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #2f80ed;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+button:hover {
+    background-color: #56ccf2;
+}
+
+.botones {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 10px 0px 5px 0px;
+}
+
+#botonCalcular {
+    width: 40%;
+}
+
+.grupo-salida {
+    margin-top: 20px;
+}
+
+.resultado {
+    font-size: 18px;
+    color: #333;
+}
+
+#areaInf, #areaSup {
+    font-weight: bold;
+    color: #2f80ed;
+}
