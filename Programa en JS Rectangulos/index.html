@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando Area Aproximada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Área Bajo La Curva</h1>
+        <div class="grupo-entrada">
+            <label for="li">Función</label>
+            <input type="text" id="func" placeholder="Recuerda agrupar tu función, ejemplo: (1/3)*x+(5/3)">
+        </div>
+        <div class="grupo-entrada">
+            <label for="li">Límite Inferior</label>
+            <input type="number" id="li" placeholder="Ingresa el límite inferior">
+        </div>
+        <div class="grupo-entrada">
+            <label for="ls">Límite Superior</label>
+            <input type="number" id="ls" placeholder="Ingresa el límite superior">
+        </div>
+        <div class="grupo-entrada">
+            <label for="nrect">Número de Rectángulos</label>
+            <input type="number" id="nrect" placeholder="Ingresa el número de rectángulos">
+        </div>
+        <div class="botones">
+            <button onclick="calcularAreaSup(), areaInferior()" id="botonCalcular">Calcular</button>
+            <button onclick="limpiarCampos()">Limpiar Campos</button>
+        </div>
+        <div class="grupo-salida">
+            <p class="resultado">Área Inferior Aproximada: <span id="areaInf">-</span> unidades²</p>
+            <p class="resultado">Área Superior Aproximada: <span id="areaSup">-</span> unidades²</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
